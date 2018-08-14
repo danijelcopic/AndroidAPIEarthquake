@@ -2,6 +2,9 @@
 Udacity Android Basics: Networking course
 
 ## Useful links
-https://www.programmableweb.com/apis/directory
-https://developers.google.com/apis-explorer/#p/
-https://www.data.gov/
+* [Programmableweb](https://www.programmableweb.com/apis/directory) - Largest API Directory on the Web
+* [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/) 
+* [DATA.GOV](https://www.data.gov/) - open data
+
+
+
