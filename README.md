@@ -1,11 +1,14 @@
 # AndroidAPIEarthquake
 Udacity Android Basics: Networking course
 
-## Useful links
+## Useful API links
 * [Programmableweb](https://www.programmableweb.com/apis/directory) - Largest API Directory on the Web
 * [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/) 
 * [DATA.GOV](https://www.data.gov/) - open data
 * [Earthquake.usgs.gov](https://earthquake.usgs.gov/fdsnws/event/1/) - earthquake API
+
+## Useful Android links
+* [SimpleDateFormat](https://developer.android.com/reference/java/text/SimpleDateFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - SimpleDateFormat
 
 
 

@@ -21,6 +21,12 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -33,16 +39,19 @@ public class EarthquakeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.earthquake_activity);
 
+
         // Create a fake list of earthquake locations.
-        ArrayList<EarthquakeModel> earthquakes = new ArrayList<>();
-        earthquakes.add(new EarthquakeModel(4.5, "San Francisco", "May 03, 2014"));
-        earthquakes.add(new EarthquakeModel(4.5, "San Francisco", "May 03, 2014"));
-        earthquakes.add(new EarthquakeModel(4.5, "San Francisco", "May 03, 2014"));
+        ArrayList<EarthquakeModel> earthquakes = QueryUtils.extractEarthquakes();
 
 
         CustomAdapter customAdapter = new CustomAdapter(this, earthquakes);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(customAdapter);
+
+
+
+
+
 
     }
 }

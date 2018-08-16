@@ -11,15 +11,15 @@ public class EarthquakeModel {
 
     private Double mMagnitude;
     private String mPlace;
-    private String mDate;
+    private Long mDateMillisecond;
 
     public EarthquakeModel() {
     }
 
-    public EarthquakeModel(Double magnitude, String place, String date){
+    public EarthquakeModel(Double magnitude, String place, Long dateMillisecond){
         this.mMagnitude = magnitude;
         this.mPlace = place;
-        this.mDate = date;
+        this.mDateMillisecond = dateMillisecond;
     }
 
     public Double getMagnitude() {
@@ -38,11 +38,11 @@ public class EarthquakeModel {
         this.mPlace = place;
     }
 
-    public String getDate() {
-        return mDate;
+    public Long getDateMillisecond() {
+        return mDateMillisecond;
     }
 
-    public void setDate(String date) {
-        this.mDate = date;
+    public void setDateMillisecond(Long date) {
+        this.mDateMillisecond = date;
     }
 }
