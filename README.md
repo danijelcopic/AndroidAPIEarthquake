@@ -9,6 +9,9 @@ Udacity Android Basics: Networking course
 
 ## Useful Android links
 * [SimpleDateFormat](https://developer.android.com/reference/java/text/SimpleDateFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - SimpleDateFormat
+* [String](https://developer.android.com/reference/java/lang/String) - String
+* [DecimalFormat](https://developer.android.com/reference/java/text/DecimalFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - DecimalFormat
+* [NumberFormat](https://developer.android.com/reference/java/text/NumberFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - NumberFormat
 
 
 
