@@ -1,8 +1,5 @@
 package com.example.android.quakereport;
 
-import java.net.URL;
-import java.util.Date;
-
 
 /**
  * {@link EarthquakeModel} represents a some data for earthquake description.
