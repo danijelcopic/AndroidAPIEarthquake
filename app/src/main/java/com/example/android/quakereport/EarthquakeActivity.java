@@ -15,9 +15,13 @@
  */
 package com.example.android.quakereport;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -25,10 +29,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 public class EarthquakeActivity extends AppCompatActivity {
 
@@ -45,8 +51,21 @@ public class EarthquakeActivity extends AppCompatActivity {
 
 
         CustomAdapter customAdapter = new CustomAdapter(this, earthquakes);
-        ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(customAdapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                EarthquakeModel model = (EarthquakeModel) parent.getItemAtPosition(position);
+
+                Intent intent = new Intent (Intent.ACTION_VIEW, Uri.parse(model.getmUrl()));
+                startActivity(intent);
+
+            }
+        });
 
 
 

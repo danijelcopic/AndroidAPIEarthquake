@@ -45,7 +45,6 @@ public class CustomAdapter extends ArrayAdapter<EarthquakeModel> {
 
 
 
-
         // get magnitude
         String tv_magnitude_String = formatMagnitude(earthquakeModel.getMagnitude());
         tv_magnitude.setText(tv_magnitude_String);
@@ -57,11 +56,8 @@ public class CustomAdapter extends ArrayAdapter<EarthquakeModel> {
         magnitudeCircle.setColor(magnitudeColor);
 
 
-
-
-
-
         //example: ... “74km NW of Rumoi, Japan” ... “Pacific-Antarctic Ridge”
+
 
         // get place and place offset
         String placeStringObject = earthquakeModel.getPlace();

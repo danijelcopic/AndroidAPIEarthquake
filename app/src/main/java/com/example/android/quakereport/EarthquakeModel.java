@@ -1,25 +1,29 @@
 package com.example.android.quakereport;
 
+import java.net.URL;
 import java.util.Date;
 
 
 /**
  * {@link EarthquakeModel} represents a some data for earthquake description.
- * Each earthquake object has 3 properties: magnitude, place and date.
+ * Each earthquake object has 3 properties: magnitude, place and date + URL
+ * mUrl  - 'url' part from JSON ... detailed earthquake description
  */
 public class EarthquakeModel {
 
     private Double mMagnitude;
     private String mPlace;
     private Long mDateMillisecond;
+    private String mUrl;
 
     public EarthquakeModel() {
     }
 
-    public EarthquakeModel(Double magnitude, String place, Long dateMillisecond){
+    public EarthquakeModel(Double magnitude, String place, Long dateMillisecond, String mUrl){
         this.mMagnitude = magnitude;
         this.mPlace = place;
         this.mDateMillisecond = dateMillisecond;
+        this.mUrl = mUrl;
     }
 
     public Double getMagnitude() {
@@ -44,5 +48,13 @@ public class EarthquakeModel {
 
     public void setDateMillisecond(Long date) {
         this.mDateMillisecond = date;
+    }
+
+    public String getmUrl() {
+        return mUrl;
+    }
+
+    public void setUrl(String url) {
+        this.mUrl = url;
     }
 }
