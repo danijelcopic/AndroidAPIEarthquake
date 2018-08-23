@@ -13,5 +13,9 @@ Udacity Android Basics: Networking course
 * [DecimalFormat](https://developer.android.com/reference/java/text/DecimalFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - DecimalFormat
 * [NumberFormat](https://developer.android.com/reference/java/text/NumberFormat?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - NumberFormat
 
+### Android permission
+* [Manifest.permission](https://developer.android.com/reference/android/Manifest.permission?utm_source=udacity&utm_medium=course&utm_campaign=android_basics) - Manifest.permission
 
+* [Dangerous permissions](https://developer.android.com/guide/topics/permissions/overview?utm_source=udacity&utm_medium=course&utm_campaign=android_basics#normal-dangerous) - Dangerous permissions
+* [Normal permissions](https://developer.android.com/guide/topics/permissions/overview?utm_source=udacity&utm_medium=course&utm_campaign=android_basics#normal-dangerous) - Normal permissions
 
